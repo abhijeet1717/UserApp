@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:id="@+id/collegeImage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:text="Raj Kumar Goel Institute of Technology (RKGIT), is a private college in Ghaziabad, India. It is affiliated to Dr. A.P.J. Abdul Kalam Technical University.[1][2][3]
+
+History
+Raj Kumar Goel Institute of Technology was established in 2000 by late Sri Raj Kumar Goel. The institute is recognized by both governing bodies, All India Council for Technical Education (AICTE) and Council of India (PCI) and it is affiliated to Dr. A.P.J. Abdul Kalam Technical University.[4]
+
+In April 2020 during COVID-19 pandemic in India the institute was temporarily converted in quarantine center by order of the Government of Uttar Pradesh.[5][6]
+
+Campus
+The institute is spread over 27 acres.[7] Its facilities include canteens, hostels, library, sports, transportation, ATMs, computer lab, classrooms, auditorium and conference hall, as well as language lab and medical facilities."/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_label_important_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Green Environment"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Branch"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:id="@+id/vewPager"/>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
